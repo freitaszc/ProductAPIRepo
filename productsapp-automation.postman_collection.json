@@ -64,7 +64,9 @@
               "pm.test(\"Name is 'Tomato Soup'\", () => {pm.expect(jsonData.Name).to.equal(\"Tomato Soup\")});\r",
               "pm.test(\"Category is Groceries)\", () => {pm.expect(jsonData.Category).to.equal(\"Groceries\")});\r",
               "pm.test(\"Price is 1\", () => {pm.expect(jsonData.Price).to.equal(1)});\r",
-              ""
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
             ],
             "type": "text/javascript",
             "packages": {},
