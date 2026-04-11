@@ -15,9 +15,9 @@
             "exec": [
               "var jsonData = pm.response.json();",
               "pm.test(\"value of [0].Id to be 1\", () => { pm.expect(jsonData[0].Id).to.equal(1)});",
-              "pm.test(\"value of [0].Name to be 'Tomato Soup'\", () => { pm.expect(jsonData[0].Name).to.equal(\"Tomato Soup\")});",
-              "pm.test(\"value of [0].Category to be 'Groceries'\", () => { pm.expect(jsonData[0].Category).to.equal(\"Groceries\")});",
-              "pm.test(\"value of [0].Price to be 1\", () => { pm.expect(jsonData[0].Price).to.equal(1)});",
+              "pm.test(\"value of [0].Name to be 'Potato Soup'\", () => { pm.expect(jsonData[0].Name).to.equal(\"Potato Soup\")});",
+              "pm.test(\"value of [0].Category to be 'Schmoceries'\", () => { pm.expect(jsonData[0].Category).to.equal(\"Schmoceries\")});",
+              "pm.test(\"value of [0].Price to be 3\", () => { pm.expect(jsonData[0].Price).to.equal(3)});",
               "pm.test(\"value of [1].Id to be 2\", () => { pm.expect(jsonData[1].Id).to.equal(2)});",
               "pm.test(\"value of [1].Name to be 'Yo-yo'\", () => { pm.expect(jsonData[1].Name).to.equal(\"Yo-yo\")});",
               "pm.test(\"value of [1].Category to be 'Toys'\", () => { pm.expect(jsonData[1].Category).to.equal(\"Toys\")});",
@@ -59,13 +59,13 @@
           "listen": "test",
           "script": {
             "exec": [
-              "var jsonData = pm.response.json();\r",
-              "pm.test(\"Id is 1\", () => {pm.expect(jsonData.Id).to.equal(1)});\r",
-              "pm.test(\"Name is 'Tomato Soup'\", () => {pm.expect(jsonData.Name).to.equal(\"Tomato Soup\")});\r",
-              "pm.test(\"Category is Groceries)\", () => {pm.expect(jsonData.Category).to.equal(\"Groceries\")});\r",
-              "pm.test(\"Price is 1\", () => {pm.expect(jsonData.Price).to.equal(1)});\r",
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
+              "var jsonData = pm.response.json();",
+              "pm.test(\"Id is 1\", () => {pm.expect(jsonData.Id).to.equal(1)});",
+              "pm.test(\"Name is 'Potato Soup'\", () => {pm.expect(jsonData.Name).to.equal(\"Potato Soup\")});",
+              "pm.test(\"Category is Schmoceries\", () => {pm.expect(jsonData.Category).to.equal(\"Schmoceries\")});",
+              "pm.test(\"Price is 3\", () => {pm.expect(jsonData.Price).to.equal(3)});",
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
               "});"
             ],
             "type": "text/javascript",
